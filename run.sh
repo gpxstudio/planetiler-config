@@ -3,7 +3,7 @@
 mkdir -p data
 
 docker run \
-    -e JAVA_TOOL_OPTIONS="-Xmx1g -XX:MaxHeapFreeRatio=40" \
+    -e JAVA_TOOL_OPTIONS="-Xmx110g -XX:MaxHeapFreeRatio=40" \
     -v "$(pwd)/data":/data \
     ghcr.io/onthegomap/planetiler:latest \
     --download --area=planet --bounds=planet \
