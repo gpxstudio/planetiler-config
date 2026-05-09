@@ -10,4 +10,4 @@ docker run \
     --download-threads=10 --download-chunk-size-mb=1000 \
     `# --fetch-wikidata` \
     --output=data/output.pmtiles \
-    --nodemap-type=array --storage=ram
+    --nodemap-type=array --storage=mmap
