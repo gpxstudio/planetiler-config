@@ -8,6 +8,6 @@ docker run \
     ghcr.io/onthegomap/planetiler:latest \
     --download --area=planet --bounds=planet \
     --download-threads=10 --download-chunk-size-mb=1000 \
-    --fetch-wikidata \
+    # --fetch-wikidata \
     --output=data/output.pmtiles \
     --nodemap-type=array --storage=ram
